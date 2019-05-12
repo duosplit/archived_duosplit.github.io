@@ -111,6 +111,7 @@ a:hover {
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+    text-transform: uppercase;
 }
 
 li {
