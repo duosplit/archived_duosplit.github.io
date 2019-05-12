@@ -116,3 +116,8 @@ canvas {
 a:hover {
  cursor:pointer;
 }
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
