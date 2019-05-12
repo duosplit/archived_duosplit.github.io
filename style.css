@@ -31,7 +31,7 @@ canvas {
 	background-image: linear-gradient(to bottom right, #4eba70, #8ee7ed, #aa97ef);
 	background-repeat: no-repeat;
 	background-size: cover;
-	/*background-position: 50% 50%;*/
+	background-position: 50% 50%;
 
 	display:block;
     z-index: -1;
@@ -43,15 +43,6 @@ canvas {
     position: absolute;
     background: transparent;
 }
-/*
-.footer {
-   left: 0;
-   right: 0;
-   bottom: 0;
-   color: white;
-   text-align: center;
-   padding: 0;
-}*/
 
 .download-button {
   background-color: transparent;
