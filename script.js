@@ -115,7 +115,16 @@ var particlesConfig = {
 };
 
 $(document).ready(function() {
-  document.getElementsByTagName("html")[0].style.visibility = "visible";
+   var userLang = navigator.language || navigator.userLanguage;
+   console.log(userLang)
+   if($('.' + userLang.split('-')[0]).length) {
+       $('li').removeClass('active');
+       $('.' + userLang.split('-')[0]).addClass('active');
+   }
+
+   document.getElementsByTagName("html")[0].style.visibility = "visible";
 });
+
+
 
 particlesJS("particles-js", particlesConfig);var count_particles, stats, update; 

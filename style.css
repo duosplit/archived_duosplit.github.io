@@ -112,3 +112,10 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
+
+li {
+    display: none;
+}
+li.active {
+    display: block;
+}
