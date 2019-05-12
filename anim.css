@@ -6,9 +6,13 @@
 }
 
 @keyframes myfirst {
-  0%   {left: 100px; top: 0px;}
+  0%   {left: 100px;}
 /*  25%  {background: yellow; left: 200px; top: 0px;}
   50%  {background: blue; left: 200px; top: 200px;}
   75%  {background: green; left: 0px; top: 200px;}*/
-  100% {left: 0px; top: 0px;}
+  100% {left: 0px; }
+}
+
+table, th, td {
+  border: 1px solid black;
 }
