@@ -63,6 +63,76 @@
 */
 
 
+/* LOGO */
+
+/*.logo-anim {
+  animation: logo 1s linear forwards;
+  animation-delay: 1s;
+}*/
+
+/*.logo-anim-outro {
+  animation: logo-outro 1s linear forwards;
+  animation-delay: 1s;
+}*/
+
+/*@keyframes logo {
+  0%   {opacity: 0; height: 1000; width: 1000}
+  100% {opacity: 1; margin-left: -65;margin-top: 0}
+}*/
+
+/*@keyframes logo-outro {
+  0% {opacity: 1; margin-left: -65;margin-top: 0}
+  100%   {opacity: 0; height: 1000; width: 1000}
+}*/
+
+/*.logo-anim {
+	opacity: 0;
+	position: absolute;
+}*/
+
+
+/* BODY */
+
+table {
+	animation: table 1s linear forwards;
+  	animation-delay: 2s;
+}
+
+@keyframes table {
+  0% {opacity: 1;}
+  100%   {opacity: 0;}
+}
+
+/* BODY */
+
+.outro {
+	animation: outro 1s linear forwards;
+  	animation-delay: 3s;
+}
+
+@keyframes outro {
+  0% {opacity: 0;}
+  100%   {opacity: 1;}
+}
+
+.outro {
+	opacity: 0;
+	position: absolute;
+}
+
+
+
+
+
 table, th, td {
   border: 1px solid transparent;
+}
+
+.center{
+    position:absolute;
+    display:block;
+    left:50%;
+    top:50%;
+    margin-top:75px;
+    margin-left:-134px;
 }
