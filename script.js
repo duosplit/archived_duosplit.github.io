@@ -125,7 +125,6 @@ $(document).ready(function() {
    var SLIDE_TIME = 6;
 
    $( "[class*='slidetext']" ).each(function(index) {
-      console.log($(this))
       $(this).css("position", "relative");
       $(this).css("animation", "slide 10s linear forwards");
       $(this).css("animation-delay", index * SLIDE_TIME + "s");
@@ -136,7 +135,6 @@ $(document).ready(function() {
    })
 
    $( "[class*='slideimg']" ).each(function(index) {
-      console.log($(this))
       $(this).css("animation", "appear 1s linear forwards");
       $(this).css("animation-delay", index * SLIDE_TIME + "s");
 
