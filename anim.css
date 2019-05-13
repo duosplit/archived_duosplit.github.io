@@ -1,7 +1,10 @@
+/* TEXT */
+
 .slide1 {
   position: relative;
   animation: slide 10s linear forwards;
-  z-index: 2;
+  animation-delay: 0s;
+  z-index: 1;
 }
 
 .slide2 {
@@ -31,6 +34,41 @@
 	position: absolute;
 	margin-top: 300px
 }
+
+
+
+
+/* IMAGE */
+
+.slide1img {
+  animation: appear 1s linear forwards;
+  animation-delay: 0s;
+  z-index: 1;
+}
+
+.slide2img {
+  animation: appear 1s linear forwards;
+  animation-delay: 6s;
+  z-index: 1;
+}
+
+.slide3img {
+  animation: appear 1s linear forwards;
+  animation-delay: 12s;
+  z-index: 1;
+}
+
+@keyframes appear {
+  0%   {opacity: 0}
+  100% {opacity: 1}
+}
+
+.slide1img, .slide2img, .slide3img {
+	opacity: 0;
+}
+
+
+
 
 table, th, td {
   border: 1px solid transparent;
