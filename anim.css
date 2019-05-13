@@ -1,22 +1,22 @@
 /* TEXT */
 
-.slide1 {
+/*.slidetext1 {
   position: relative;
   animation: slide 10s linear forwards;
   animation-delay: 0s;
 }
 
-.slide2 {
+.slidetext2 {
   position: relative;
   animation: slide 10s linear forwards;
   animation-delay: 6s;
 }
 
-.slide3 {
+.slidetext3 {
   position: relative;
   animation: slide 10s linear forwards;
   animation-delay: 12s;
-}
+}*/
 
 @keyframes slide {
   0%   {left: 100px; opacity: 0}
@@ -26,41 +26,41 @@
   100% {left: -1000px; opacity: 0; visibility: hidden;display: none;}
 }
 
-.slide1, .slide2, .slide3 {
+/*.slidetext1, .slidetext2, .slidetext3 {
 	opacity: 0;
 	position: absolute;
 	margin-top: 300px
-}
+}*/
 
 
 
 
 /* IMAGE */
 
-.slide1img {
+/*.slideimg1 {
   animation: appear 1s linear forwards;
   animation-delay: 0s;
 }
 
-.slide2img {
+.slideimg2 {
   animation: appear 1s linear forwards;
   animation-delay: 6s;
 }
 
-.slide3img {
+.slideimg3 {
   animation: appear 1s linear forwards;
   animation-delay: 12s;
-}
+}*/
 
 @keyframes appear {
   0%   {opacity: 0}
   100% {opacity: 1}
 }
 
-.slide1img, .slide2img, .slide3img {
+/*.slideimg1, .slideimg2, .slideimg3 {
 	opacity: 0;
 }
-
+*/
 
 
 table, th, td {

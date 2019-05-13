@@ -116,11 +116,32 @@ var particlesConfig = {
 
 $(document).ready(function() {
    var userLang = navigator.language || navigator.userLanguage;
-   console.log(userLang)
-   if($('.' + userLang.split('-')[0]).length) {
+
+   if ($('.' + userLang.split('-')[0]).length) {
        $('li').removeClass('active');
        $('.' + userLang.split('-')[0]).addClass('active');
    }
+
+   var SLIDE_TIME = 6;
+
+   $( "[class*='slidetext']" ).each(function(index) {
+      console.log($(this))
+      $(this).css("position", "relative");
+      $(this).css("animation", "slide 10s linear forwards");
+      $(this).css("animation-delay", index * SLIDE_TIME + "s");
+
+      $(this).css("opacity", "0");
+      $(this).css("position", "absolute");
+      $(this).css("margin-top", "300px");
+   })
+
+   $( "[class*='slideimg']" ).each(function(index) {
+      console.log($(this))
+      $(this).css("animation", "appear 1s linear forwards");
+      $(this).css("animation-delay", index * SLIDE_TIME + "s");
+
+      $(this).css("opacity", "0");
+   })
 
    document.getElementsByTagName("html")[0].style.visibility = "visible";
 });
