@@ -24,7 +24,7 @@
 
 table {
 	animation: table 1s linear forwards;
-  	animation-delay: 2s;
+  	animation-delay: 50s;					/* TIMING */
 }
 
 @keyframes table {
@@ -39,7 +39,7 @@ table {
 
 .outro {
 	animation: outro 1s linear forwards;
-  	animation-delay: 3s;
+  	animation-delay: 51s;					/* TIMING */
 }
 
 @keyframes outro {
@@ -58,7 +58,7 @@ table {
 
 .com {
 	animation: outro 1s linear forwards;
-  	animation-delay: 4s;
+  	animation-delay: 52s;					/* TIMING */
 }
 
 
