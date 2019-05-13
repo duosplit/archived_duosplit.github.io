@@ -123,11 +123,12 @@ $(document).ready(function() {
    }
 
    var SLIDE_TIME = 6;
+   var STARTING_TIME = 2;
 
    $( "[class*='slidetext']" ).each(function(index) {
       $(this).css("position", "relative");
       $(this).css("animation", "slide 10s linear forwards");
-      $(this).css("animation-delay", index * SLIDE_TIME + "s");
+      $(this).css("animation-delay", STARTING_TIME + index * SLIDE_TIME + "s");
 
       $(this).css("opacity", "0");
       $(this).css("position", "absolute");
@@ -136,7 +137,7 @@ $(document).ready(function() {
 
    $( "[class*='slideimg']" ).each(function(index) {
       $(this).css("animation", "appear 1s linear forwards");
-      $(this).css("animation-delay", index * SLIDE_TIME + "s");
+      $(this).css("animation-delay", STARTING_TIME + index * SLIDE_TIME + "s");
 
       $(this).css("opacity", "0");
    })

@@ -1,23 +1,5 @@
 /* TEXT */
 
-/*.slidetext1 {
-  position: relative;
-  animation: slide 10s linear forwards;
-  animation-delay: 0s;
-}
-
-.slidetext2 {
-  position: relative;
-  animation: slide 10s linear forwards;
-  animation-delay: 6s;
-}
-
-.slidetext3 {
-  position: relative;
-  animation: slide 10s linear forwards;
-  animation-delay: 12s;
-}*/
-
 @keyframes slide {
   0%   {left: 100px; opacity: 0}
   15% {left: 20px;  opacity: 1}
@@ -26,69 +8,16 @@
   100% {left: -1000px; opacity: 0; visibility: hidden;display: none;}
 }
 
-/*.slidetext1, .slidetext2, .slidetext3 {
-	opacity: 0;
-	position: absolute;
-	margin-top: 300px
-}*/
-
-
 
 
 /* IMAGE */
-
-/*.slideimg1 {
-  animation: appear 1s linear forwards;
-  animation-delay: 0s;
-}
-
-.slideimg2 {
-  animation: appear 1s linear forwards;
-  animation-delay: 6s;
-}
-
-.slideimg3 {
-  animation: appear 1s linear forwards;
-  animation-delay: 12s;
-}*/
 
 @keyframes appear {
   0%   {opacity: 0}
   100% {opacity: 1}
 }
 
-/*.slideimg1, .slideimg2, .slideimg3 {
-	opacity: 0;
-}
-*/
 
-
-/* LOGO */
-
-/*.logo-anim {
-  animation: logo 1s linear forwards;
-  animation-delay: 1s;
-}*/
-
-/*.logo-anim-outro {
-  animation: logo-outro 1s linear forwards;
-  animation-delay: 1s;
-}*/
-
-/*@keyframes logo {
-  0%   {opacity: 0; height: 1000; width: 1000}
-  100% {opacity: 1; margin-left: -65;margin-top: 0}
-}*/
-
-/*@keyframes logo-outro {
-  0% {opacity: 1; margin-left: -65;margin-top: 0}
-  100%   {opacity: 0; height: 1000; width: 1000}
-}*/
-
-/*.logo-anim {
-	opacity: 0;
-	position: absolute;
-}*/
 
 
 /* BODY */
@@ -103,7 +32,10 @@ table {
   100%   {opacity: 0;}
 }
 
-/* BODY */
+
+
+
+/* OUTRO */
 
 .outro {
 	animation: outro 1s linear forwards;
@@ -115,11 +47,19 @@ table {
   100%   {opacity: 1;}
 }
 
-.outro {
+.outro, .com {
 	opacity: 0;
 	position: absolute;
 }
 
+
+
+/* COM */
+
+.com {
+	animation: outro 1s linear forwards;
+  	animation-delay: 4s;
+}
 
 
 
