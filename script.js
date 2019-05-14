@@ -122,8 +122,12 @@ $(document).ready(function() {
        $('.' + userLang.split('-')[0]).addClass('active');
    }
 
+   $( ".imgB1" ).each(function(index) {
+      $(this).attr("src", userLang.split('-')[0] + "/" + $(this).attr('src').split("/")[1]);
+   })
+
    var SLIDE_TIME = 6;
-   var STARTING_TIME = 2;
+   var STARTING_TIME = 1;
 
    $( "[class*='slidetext']" ).each(function(index) {
       $(this).css("position", "relative");
@@ -131,8 +135,8 @@ $(document).ready(function() {
       $(this).css("animation-delay", STARTING_TIME + index * SLIDE_TIME + "s");
 
       $(this).css("opacity", "0");
-      $(this).css("position", "absolute");
-      $(this).css("margin-top", "300px");
+      $(this).css("position", "absolute");         // ENABLE FOR VIDEO
+      // $(this).css("margin-top", "300px");          // ENABLE FOR VIDEO
    })
 
    $( "[class*='slideimg']" ).each(function(index) {
