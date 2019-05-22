@@ -80,6 +80,11 @@ canvas {
   color: white;
 }
 
+.fa-medium {
+  background: white;
+  color: #73f28e;
+}
+
 .roboto {
 	font-family: 'Roboto Condensed';
 }
