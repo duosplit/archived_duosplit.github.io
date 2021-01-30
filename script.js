@@ -114,6 +114,9 @@ var particlesConfig = {
    "retina_detect": true
 };
 
+var SLIDE_TIME = 6;
+var STARTING_TIME = 1;
+
 $(document).ready(function() {
    var userLang = navigator.language || navigator.userLanguage;
 
@@ -126,28 +129,37 @@ $(document).ready(function() {
       $(this).attr("src", userLang.split('-')[0] + "/" + $(this).attr('src').split("/")[1]);
    })
 
-   var SLIDE_TIME = 6;
-   var STARTING_TIME = 1;
+   var iteration = 0;
 
+   animate(iteration);
+
+   setInterval(function(){
+      iteration++;
+      animate(iteration);
+   }, (STARTING_TIME + 7 * SLIDE_TIME) * 1000);
+
+   document.getElementsByTagName("html")[0].style.visibility = "visible";
+});
+
+function animate(iteration) {
    $( "[class*='slidetext']" ).each(function(index) {
       $(this).css("position", "relative");
       $(this).css("animation", "slide 10s linear forwards");
-      $(this).css("animation-delay", STARTING_TIME + index * SLIDE_TIME + "s");
+      $(this).css("animation-delay", (STARTING_TIME + iteration * (7 * SLIDE_TIME)) + index * SLIDE_TIME + "s");
 
       $(this).css("opacity", "0");
       $(this).css("position", "absolute");         // ENABLE FOR VIDEO
       // $(this).css("margin-top", "300px");          // ENABLE FOR VIDEO
    })
 
+
    $( "[class*='slideimg']" ).each(function(index) {
       $(this).css("animation", "appear 1s linear forwards");
-      $(this).css("animation-delay", STARTING_TIME + index * SLIDE_TIME + "s");
+      $(this).css("animation-delay", (STARTING_TIME + iteration * (7 * SLIDE_TIME)) + index * SLIDE_TIME + "s");
 
       $(this).css("opacity", "0");
    })
-
-   document.getElementsByTagName("html")[0].style.visibility = "visible";
-});
+}
 
 
 
