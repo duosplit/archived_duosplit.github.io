@@ -129,6 +129,12 @@ $(document).ready(function() {
       $(this).attr("src", userLang.split('-')[0] + "/" + $(this).attr('src').split("/")[1]);
    })
 
+   setInterval(function(){
+      $( ".firstimg" ).each(function(index) {
+         $(this).remove()
+      })
+   }, 3000);
+
    var iteration = 0;
 
    animate(iteration);
