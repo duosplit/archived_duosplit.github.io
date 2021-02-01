@@ -133,7 +133,7 @@ $(document).ready(function() {
       $( ".firstimg" ).each(function(index) {
          $(this).remove()
       })
-   }, 3000);
+   }, 6000);
 
    var iteration = 0;
 
