@@ -163,4 +163,4 @@ function animate(iteration) {
 
 
 
-// particlesJS("particles-js", particlesConfig);var count_particles, stats, update; 
+particlesJS("particles-js", particlesConfig);var count_particles, stats, update; 
