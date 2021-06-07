@@ -105,11 +105,26 @@ canvas {
   position: absolute;
 }
 .imgA1 {
-  z-index: 1;
+  z-index: 10;
 }
 .imgB1 {
   z-index: 3;
 }
+
+
+.white-box {
+  float: left;
+  position: absolute;
+  left: 16px;
+  top: 35px;
+  width: 310px;
+  z-index: 5;
+  background-color: #ffffff;
+  padding: 5px;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
 
 a:hover {
  cursor:pointer;
