@@ -170,3 +170,17 @@ function animate(iteration) {
 
 
 particlesJS("particles-js", particlesConfig);var count_particles, stats, update; 
+
+
+$(document).ready(function(){
+   $('.carousel').slick({
+      dots: false,
+      infinite: true,
+      speed: 500,
+      fade: true,
+      cssEase: 'linear',
+      variableWidth: true,
+      centerMode: true,
+      slidesToShow: 1
+    });
+ });
