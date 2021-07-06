@@ -101,9 +101,9 @@ canvas {
   font-family: 'Barlow';
 }
 
-.img {
+/* .img {
   position: absolute;
-}
+} */
 .imgA1 {
   z-index: 10;
 }
@@ -146,3 +146,19 @@ li {
 li.active {
     display: block;
 }
+
+
+
+.slick-prev:before {
+  content: "<";
+  color: white;
+  font-size: 100px;
+}
+
+.slick-next:before {
+  content: ">";
+  color: white;
+  font-size: 100px;
+}
+
+img { width: 40% }
