@@ -125,7 +125,7 @@ $(document).ready(function() {
        $('.' + userLang.split('-')[0]).addClass('active');
    }
 
-   $( ".imgB1" ).each(function(index) {
+   $( ".img-sample" ).each(function(index) {
       $(this).attr("src", userLang.split('-')[0] + "/" + $(this).attr('src').split("/")[1]);
    })
 
@@ -179,15 +179,15 @@ $(document).ready(function(){
 
 
 
- // fix Unchecked runtime.lastError: Could not establish connection. Receiving end does not exist.
- window.chrome.runtime.sendMessage(
-   EXTENSION_ID,
-   { message:"---" }, // jsonable message
-   (result) => {
-     if (!window.chrome.runtime.lastError) {
-        // message processing code goes here
-     } else {
-       // error handling code goes here
-     }
-   }
- );
+//  // fix Unchecked runtime.lastError: Could not establish connection. Receiving end does not exist.
+//  window.chrome.runtime.sendMessage(
+//    EXTENSION_ID,
+//    { message:"---" }, // jsonable message
+//    (result) => {
+//      if (!window.chrome.runtime.lastError) {
+//         // message processing code goes here
+//      } else {
+//        // error handling code goes here
+//      }
+//    }
+//  );
