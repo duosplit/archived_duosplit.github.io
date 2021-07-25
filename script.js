@@ -129,44 +129,8 @@ $(document).ready(function() {
       $(this).attr("src", userLang.split('-')[0] + "/" + $(this).attr('src').split("/")[1]);
    })
 
-   setInterval(function(){
-      $( ".firstimg" ).each(function(index) {
-         $(this).remove()
-      })
-   }, 6000);
-
-   var iteration = 0;
-
-   // animate(iteration);
-
-   setInterval(function(){
-      iteration++;
-      animate(iteration);
-   }, (STARTING_TIME + 7 * SLIDE_TIME) * 1000);
-
    document.getElementsByTagName("html")[0].style.visibility = "visible";
 });
-
-// function animate(iteration) {
-//    $( "[class*='slidetext']" ).each(function(index) {
-//       $(this).css("position", "relative");
-//       $(this).css("animation", "slide 10s linear forwards");
-//       $(this).css("animation-delay", (STARTING_TIME + iteration * (7 * SLIDE_TIME)) + index * SLIDE_TIME + "s");
-
-//       $(this).css("opacity", "0");
-//       $(this).css("position", "absolute");         // ENABLE FOR VIDEO
-//       // $(this).css("margin-top", "300px");          // ENABLE FOR VIDEO
-//    })
-
-
-//    $( "[class*='slideimg']" ).each(function(index) {
-//       $(this).css("animation", "appear 1s linear forwards");
-//       $(this).css("animation-delay", (STARTING_TIME + iteration * (7 * SLIDE_TIME)) + index * SLIDE_TIME + "s");
-
-//       $(this).css("opacity", "0");
-//    })
-// }
-
 
 
 particlesJS("particles-js", particlesConfig);var count_particles, stats, update; 
@@ -176,7 +140,7 @@ $(document).ready(function(){
    showSlide(0);
 
    $('.carousel').slick({
-      dots: false,
+      dots: true,
       infinite: true,
       speed: 500,
       fade: true,
@@ -186,7 +150,11 @@ $(document).ready(function(){
       slidesToShow: 1,
       mobileFirst: true,
       prevArrow: '<button class="slide-arrow prev-arrow"></button>',
-      nextArrow: '<button class="slide-arrow next-arrow"></button>'
+      nextArrow: '<button class="slide-arrow next-arrow"></button>',
+      autoplay: true,
+      autoplaySpeed: 5000,
+      pauseOnFocus: false,
+      pauseOnHover: false
     });
 
     $('.carousel').on('beforeChange', function(event, slick, currentSlide, nextSlide){

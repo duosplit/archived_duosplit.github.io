@@ -149,31 +149,17 @@ li.active {
 
 
 
-/* .slick-prev:before {
-  content: "<";
-  color: white;
-  font-size: 100px;
-}
-
-.slick-next:before {
-  content: ">";
-  color: white;
-  font-size: 100px;
-}
-
-img { width: 40% } */
-
-
+/* carousel */
 .carousel img {
   width: 475px;
-  height: 700px;
+  height: 844;
   margin-left: auto;
   margin-right: auto;
 }
 
 .carousel {
   width: 500px;
-  height: 700px;
+  height: 844px;
   margin-left: auto;
   margin-right: auto;
 }
