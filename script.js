@@ -137,7 +137,7 @@ $(document).ready(function() {
 
    var iteration = 0;
 
-   animate(iteration);
+   // animate(iteration);
 
    setInterval(function(){
       iteration++;
@@ -147,25 +147,25 @@ $(document).ready(function() {
    document.getElementsByTagName("html")[0].style.visibility = "visible";
 });
 
-function animate(iteration) {
-   $( "[class*='slidetext']" ).each(function(index) {
-      $(this).css("position", "relative");
-      $(this).css("animation", "slide 10s linear forwards");
-      $(this).css("animation-delay", (STARTING_TIME + iteration * (7 * SLIDE_TIME)) + index * SLIDE_TIME + "s");
+// function animate(iteration) {
+//    $( "[class*='slidetext']" ).each(function(index) {
+//       $(this).css("position", "relative");
+//       $(this).css("animation", "slide 10s linear forwards");
+//       $(this).css("animation-delay", (STARTING_TIME + iteration * (7 * SLIDE_TIME)) + index * SLIDE_TIME + "s");
 
-      $(this).css("opacity", "0");
-      $(this).css("position", "absolute");         // ENABLE FOR VIDEO
-      // $(this).css("margin-top", "300px");          // ENABLE FOR VIDEO
-   })
+//       $(this).css("opacity", "0");
+//       $(this).css("position", "absolute");         // ENABLE FOR VIDEO
+//       // $(this).css("margin-top", "300px");          // ENABLE FOR VIDEO
+//    })
 
 
-   $( "[class*='slideimg']" ).each(function(index) {
-      $(this).css("animation", "appear 1s linear forwards");
-      $(this).css("animation-delay", (STARTING_TIME + iteration * (7 * SLIDE_TIME)) + index * SLIDE_TIME + "s");
+//    $( "[class*='slideimg']" ).each(function(index) {
+//       $(this).css("animation", "appear 1s linear forwards");
+//       $(this).css("animation-delay", (STARTING_TIME + iteration * (7 * SLIDE_TIME)) + index * SLIDE_TIME + "s");
 
-      $(this).css("opacity", "0");
-   })
-}
+//       $(this).css("opacity", "0");
+//    })
+// }
 
 
 
@@ -182,6 +182,8 @@ $(document).ready(function(){
       variableWidth: false,
       centerMode: true,
       slidesToShow: 1,
-      mobileFirst: true
+      mobileFirst: true,
+      prevArrow: '<button class="slide-arrow prev-arrow"></button>',
+      nextArrow: '<button class="slide-arrow next-arrow"></button>'
     });
  });
