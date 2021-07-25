@@ -149,7 +149,7 @@ li.active {
 
 
 
-.slick-prev:before {
+/* .slick-prev:before {
   content: "<";
   color: white;
   font-size: 100px;
@@ -161,4 +161,18 @@ li.active {
   font-size: 100px;
 }
 
-img { width: 40% }
+img { width: 40% } */
+
+
+.carousel img {
+  /* height: 100%;
+  width: 10% !important; */
+  /* max-height: 100%; max-width: 100% */
+  width: 100%;
+  height: 100%;
+}
+
+.carousel {
+  width: 30%;
+  /* height: 10%; */
+}

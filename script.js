@@ -179,8 +179,9 @@ $(document).ready(function(){
       speed: 500,
       fade: true,
       cssEase: 'linear',
-      variableWidth: true,
+      variableWidth: false,
       centerMode: true,
-      slidesToShow: 1
+      slidesToShow: 1,
+      mobileFirst: true
     });
  });
