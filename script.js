@@ -187,3 +187,19 @@ $(document).ready(function(){
       nextArrow: '<button class="slide-arrow next-arrow"></button>'
     });
  });
+
+
+
+ // fix Unchecked runtime.lastError: Could not establish connection. Receiving end does not exist.
+ window.chrome.runtime.sendMessage(
+   EXTENSION_ID,
+   { message:"---" }, // jsonable message
+   (result) => {
+     if (!window.chrome.runtime.lastError) {
+        // message processing code goes here
+     } else {
+       // error handling code goes here
+     }
+   }
+ );
+});
