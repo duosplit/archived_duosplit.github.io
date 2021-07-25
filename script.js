@@ -173,6 +173,8 @@ particlesJS("particles-js", particlesConfig);var count_particles, stats, update;
 
 
 $(document).ready(function(){
+   showSlide(0);
+
    $('.carousel').slick({
       dots: false,
       infinite: true,
@@ -186,7 +188,26 @@ $(document).ready(function(){
       prevArrow: '<button class="slide-arrow prev-arrow"></button>',
       nextArrow: '<button class="slide-arrow next-arrow"></button>'
     });
+
+    $('.carousel').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+      showSlide(nextSlide);
+    });
  });
+
+
+ function showSlide(index) {
+      $("[class*='slidetext']").each(function(index) {
+         $(this).css("position", "relative");
+   
+         $(this).css("opacity", "0");
+         $(this).css("position", "absolute");
+      });
+
+      $("[class*='slidetext" + index + "']").each(function(index) {
+         $(this).css("opacity", "1");
+      });
+ }
+ 
 
 
 
