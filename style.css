@@ -193,7 +193,7 @@ button{
   margin-top: -15px;
 }
 .prev-arrow{
-  left: -40px;
+  left: 30px;
   width: 0;
   height: 0;
   border-left: 0 solid transparent;
@@ -202,7 +202,7 @@ button{
   border-bottom: 10px solid transparent;
 }
 .next-arrow{
-  right: -40px;
+  right: 30px;
   width: 0;
   height: 0;
   border-right: 0 solid transparent;
