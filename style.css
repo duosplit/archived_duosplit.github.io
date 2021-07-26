@@ -151,8 +151,8 @@ li.active {
 
 /* carousel */
 .carousel img {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 100%;   /* 475px */
+  max-height: 100%;   /* 844px */
   width: auto;
   height: auto;
   margin-left: auto;
