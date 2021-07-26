@@ -5,7 +5,7 @@
 	<head>
 		<link href='assets/font-roboto-condensed.css' rel='stylesheet'>  <!-- https://fonts.googleapis.com/css?family=Roboto Condensed -->
 		<link href='assets/font-barlow.css' rel='stylesheet'>  <!-- https://fonts.googleapis.com/css?family=Barlow -->
-		<link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel="stylesheet" >
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
 
 		<script src="assets/jquery.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="slick-1.8.1/slick.css"/>
@@ -14,9 +14,11 @@
 		<script src="assets/particles.min.js"></script>
 		<script src="script.js"></script>
 		<script src="assets/bootstrap.min.js"></script>
+		<script src="assets/sharer.min.js"></script>
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="anim-index.css">
 		<link rel="stylesheet" href="assets/bootstrap.min.css">
+		
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-140393171-1"></script>
@@ -36,6 +38,12 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
 		<meta name="theme-color" content="#8ee6ed" />
+
+		<meta property="og:url"                content="https://duosplit.com" />
+		<meta property="og:type"               content="website" />
+		<meta property="og:title"              content="Discover Duo Split" />
+		<meta property="og:description"        content="Budget. Couple. Simplicity." />
+		<meta property="og:image"              content="https://duosplit.com/banner.png" />
 	</head>	
 
 	<title>Duo Split</title>
@@ -71,8 +79,22 @@
 
 			          <br>
 
-			          <a href='https://play.google.com/store/apps/details?id=com.matprov.duosplit&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img style="height: 84px;" alt='Get it on Google Play' src='https://play.google.com/intl/en/badges/images/generic/en_badge_web_generic.png'/></a>
+					  <div style="display: flex; flex-direction: row;">
+						<a href='https://play.google.com/store/apps/details?id=com.matprov.duosplit&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img style="height: 84px;" alt='Get it on Google Play' src='https://play.google.com/intl/en/badges/images/generic/en_badge_web_generic.png'/></a>
 
+						<h2 class="barlow" style="color: white; line-height: 1.5; padding-left: 20px;">
+							<li class="en active" style="font-size: 32;">
+								Share
+							</li>
+						</h2>
+
+						<button class="fab fa-twitter-square" style="color: #00aced; font-size:48px; padding-left: 10px;" data-sharer="twitter" data-title="Discover Duo Split!" data-hashtags="budget, couple, duosplit" data-url="https://duosplit.com"></button>
+						<button class="fab fa-facebook-square" style="color: #3b5998; font-size:48px; padding-left: 10px;" data-sharer="facebook" data-hashtag="budget" data-url="https://duosplit.com"></button>
+						<button class="fab fa-whatsapp-square" style="color: #4DC247; font-size:48px; padding-left: 10px;" data-sharer="whatsapp" data-title="Discover Duo Split!" data-url="https://duosplit.com"></button>
+						<button class="fab fa-pinterest-square" style="color: #CB2029; font-size:48px; padding-left: 10px;" data-sharer="pinterest" data-url="https://duosplit.com"></button>
+
+					  </div>
+			          
 			          <br>
 
 			          <div class="upper" style="height: 120;">
