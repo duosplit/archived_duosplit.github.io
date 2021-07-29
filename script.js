@@ -154,7 +154,8 @@ $(document).ready(function(){
       autoplay: true,
       autoplaySpeed: 5000,
       pauseOnFocus: false,
-      pauseOnHover: false
+      pauseOnHover: false,
+      lazyLoad: 'ondemand'
     });
 
     $('.carousel').on('beforeChange', function(event, slick, currentSlide, nextSlide){
