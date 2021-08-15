@@ -196,7 +196,7 @@ button{
 }
 .prev-arrow{
   z-index: 4;
-  /* left: 30px; */
+  left: 0;
   width: 0;
   height: 0;
   border-left: 0 solid transparent;
@@ -206,7 +206,7 @@ button{
 }
 .next-arrow{
   z-index: 4; 
-  /* right: 30px; */
+  right: 0;
   width: 0;
   height: 0;
   border-right: 0 solid transparent;
