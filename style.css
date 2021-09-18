@@ -214,3 +214,14 @@ button{
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
 }
+
+
+
+/* download presskit  */
+
+.download-presskit {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
