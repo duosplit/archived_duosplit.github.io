@@ -36,12 +36,6 @@ canvas {
     z-index: -1;
 }
 
-////
-
-.main {
-    position: absolute;
-    background: transparent;
-}
 
 .download-button {
   background-color: transparent;
@@ -213,15 +207,4 @@ button{
   border-left: 15px solid white;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-}
-
-
-
-/* download presskit  */
-
-.download-presskit {
-  margin: auto;
-  width: 50%;
-  border: 3px solid green;
-  padding: 10px;
 }
